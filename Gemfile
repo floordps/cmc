@@ -17,6 +17,7 @@ source "https://rubygems.org"
 # group :jekyll_plugins do
 #   gem "jekyll-minifier", "~> 0.1.10"
 # end
+gem 'github-pages'
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
