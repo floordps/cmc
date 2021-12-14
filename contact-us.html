@@ -1,0 +1,48 @@
+---
+layout: default
+title: Contact Us
+---
+<div class="p-5 mb-4 bg-light rounded-3 text-center">
+    <h1>Contact Us</h1>
+    <div>For all enquiries, please email us using the form below.</div>
+</div>
+<div class="container-lg">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col">
+            <div class="alert alert-success alert-dismissible fade show d-none contactus-alert mb-5" role="alert">
+                <p class="fw-bold">Thank you for getting in touch with CMC Education.</p>
+                <p>We appreciate you contacting CMC Education. We will get back in touch with you soon! Have a great
+                    day!</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form id="contactus-gform" enctype="text/plain" onsubmit="submitted=true;" method="GET"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSevVIZSCP-xhs0Sc6qvuLLz7WZmsIHwma2UFe1aaq6H5JAj2A/formResponse?"
+                target="contactus-iframe">
+                <div class="mb-3">
+                    <label for="contactus-firstname" class="form-label">Your Name<sup
+                            class="text-danger">&ast;</sup></label>
+                    <input id="contactus-firstname" type="text" name="entry.2005620554" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="contactus-email" class="form-label">Your email<sup
+                            class="text-danger">&ast;</sup></label>
+                    <input id="contactus-email" type="email" name="entry.1045781291" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="contactus-subject" class="form-label">Subject<sup
+                            class="text-danger">&ast;</sup></label>
+                    <input id="contactus-subject" type="text" name="entry.2027394290" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="contactus-message" class="form-label">Message<sup
+                            class="text-danger">&ast;</sup></label>
+                    <textarea id="contactus-message" name="entry.839337160" class="form-control" required></textarea>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <iframe name="contactus-iframe" id="contactus-iframe" style="display:none;" onload="return false;"></iframe>
+</div>
